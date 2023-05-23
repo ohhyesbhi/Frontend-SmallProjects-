@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="SubmitForm.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Starting had not learnt ways to apply CSS so here during starting days did this with INLINE-CSS-->
+
+<body style="background-color: black;">
+   
+    <h2 style="color: red;"><marquee behavior="swipe" direction="right">REGISTRATION FORM</marquee></h2>
+   
+    <table align="center" cellpadding="10">
+        <tr>
+            <td><label for="1" style="color: yellow;">FirstName:</label></td>
+          <td><input type="text" placeholder="First name" name="firstname" id="1" maxlength="40"></td>
+            <td><p style="color: white;">(Maxlength to 40 character)</p> </td>
+        </tr>
+
+        <tr>
+            <td><label for="2" style="color: yellow;">LastName: </label></td>
+            <td> <input type="text" placeholder="Last name" name="lasttname" id="2" maxlength="40">     </td>
+            <td><p style="color: white;">(Maxlength to 40 character)</p> </td>
+        </tr>
+
+       <tr>
+        <td><label for="3" style="color: yellow;">DateOfBirth: </label></td>
+        <td><input type="date" name="date" id="3"></td>
+       </tr>
+
+       <tr>
+        <td><label for="4" style="color: yellow;">EmailId: </label></td>
+        <td><input type="email" name="email" id="4" placeholder="@gmail.com"></td>
+
+       </tr>
+
+       <tr>
+        <td><label for="5" style="color: yellow;">PhoneNumber: </label></td>
+        <td><input type="number" name="MobileNumber" id="5" placeholder="xxxxxxxxxx"></td>
+
+       </tr>
+
+       <tr >
+        <td style="color: yellow;"><label for="6">Gender: </label></td>
+        <td style="color: white;"> <input type="radio" name="Gender" value="male" id="6">Male
+         <input type="radio" name="Gender" value="female" id="6">Female  
+     <input type="radio" name="Gender" value="others" id="6">Others</td>
+    </tr>
+    <tr>
+    <td style="color: yellow;"><label for="7">Address:</label></td>
+    <td><textarea id="7" cols="50" rows="10"></textarea></td>
+    </tr>
+
+    <tr>
+        <td style="color: yellow;"><label for="7">Pincode:</label></td>
+        <td><input type="number" name="Pincode" id="7" max="6"></td>
+        <td style="color: white;">(Maximum 6 characters)</td>
+    </tr>
+
+    <tr>
+        <td style="color: yellow;">Hobbies:</td>
+        <td style="color: white;"> 
+       <label for="swimming">Swimming</label><input type="checkbox" name="hobbies" id="swimming" value="swimming">
+       <label for="dancing">Dancing</label><input type="checkbox" name="hobbies" id="dancing" value="dancing">
+       <label for="Singing">Singing</label><input type="checkbox" name="hobbies" id="Singing" value="singing">
+       <label for="Others">Others</label><input type="checkbox" name="hobbies" id="Others" value="Others">
+         
+    </td>
+    </tr>
+   </table>
+   <br>
+   <br>
+   <table border="2px" cellpadding="10" align="center" style="color: white;"><th colspan="5">Academic Details</th>
+    <tr style="color: white;">
+        <th>S.No</th>
+        <th>CollegeName</th>
+        <th>StartDate</th>
+        <th>EndDate</th>
+        <th>OverallPercentage</th>
+    </tr>
+    <tr style="color: white;">
+        <td><input type="number" name="S.no" ></td>
+        <td><input type="text" name="Schoolname" placeholder="X SchoolName"></td>
+        <td><input type="number" name="StartDate" ></td>
+        <td><input type="number" name="EndDate" ></td>
+        <td><input type="number" name="Marks"></td>
+
+    </tr>
+    <tr style="color: white;">
+        <td><input type="number" name="S.no" ></td>
+        <td><input type="text" name="XIICollegename" placeholder="XII CollegeName"></td>
+        <td><input type="number" name="StartDate" ></td>
+        <td><input type="number" name="EndDate" ></td>
+        <td><input type="number" name="Marks"></td>
+
+    </tr>
+    <tr style="color: white;">
+        <td><input type="number" name="S.no" ></td>
+        <td><input type="text" name="DegreeCollegename" placeholder="Degree CollegeName"></td>
+        <td><input type="number" name="StartDate" ></td>
+        <td><input type="number" name="EndDate" ></td>
+        <td><input type="number" name="Marks"></td>
+
+    </tr>
+</table>
+</body>
+</html>
