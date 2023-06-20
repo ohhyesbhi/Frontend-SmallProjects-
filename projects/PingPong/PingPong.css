@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#ping-pong-table {
+    border: 2px solid black;
+    width: 700px;
+    height: 400px;
+    position: relative;
+    margin-left: 22.5%;
+    background-image: url("https://raw.githubusercontent.com/singhsanket143/PingPong/master/css/giphy.gif");
+}
+
+#paddle1{
+    background-color: white;
+    width: 10px;
+    height: 85px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+#alert{
+    position: absolute;
+    top: 50%;  
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: burlywood;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#paddle2{
+    background-color: white;
+  border-radius: 20px;
+    width: 10px;
+    height: 85px;
+    margin-left: 2px;
+    position: absolute;
+    top: 40%;
+    right: 0px;
+}
+
+#ball {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
