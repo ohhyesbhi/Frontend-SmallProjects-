@@ -1,0 +1,133 @@
+
+.hmtl{
+    box-sizing: border-box;
+    }
+    
+    *,*::after,* ::before{
+        box-sizing: border-box;
+    }
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body{
+    overflow: hidden;
+}
+
+.game-box{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    justify-content: center;
+    align-items: center;
+}
+
+#restartBtn{
+    margin-left: 636px;
+
+}
+
+.box{
+    border: 2px solid black ;
+    width: 138px;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.game-box :hover{
+    background-color: rgb(113, 107, 107);
+}
+
+#one{
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+#two{
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+#three{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+#four{
+    border-left: none;
+}
+
+#five{
+    border-left: none;
+}
+
+#six{
+    border-right: none;
+}
+
+#seven{
+    border-left: none;
+    border-bottom: none;
+}
+
+#eight{
+    border-left: none;
+    border-bottom: none;
+}
+
+#nine{
+    border-right: none;
+    border-bottom: none;
+}
+#DesignBlock{
+    position: absolute;
+margin-top: -700px;
+   background-image: url("https://cliply.co/wp-content/uploads/2019/02/371812620_FIREWORKS_400.gif");
+width: 103%;
+height:200vh;
+margin-top: -555px;
+margin-left: -25px;
+}
+
+.congrats{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 10px;
+    margin-top: 235px;
+}
+
+.ballons{
+    position: relative;
+    display: flex;
+flex-direction: row;
+justify-content: start;
+top: -85%;
+}
+
+.Allballons{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    animation: hello  17s linear infinite;
+    animation-delay: var(--delay);
+    bottom: 1000px;
+}
+
+
+@keyframes hello{
+    from{
+        bottom: -2000%;
+    }
+    to{
+        bottom: 1000%;
+
+    }
+}
